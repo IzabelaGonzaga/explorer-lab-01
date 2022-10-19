@@ -8,6 +8,7 @@ function setCardType(type) {
   const colors = {
     visa: ["#436D99", "#2D57F2"],
     mastercard: ["#DF6F29", "#C69347"],
+    elo: ["#BF4C32", "#F23030"],
     default: ["black", "gray"],
   }
 
@@ -16,7 +17,7 @@ function setCardType(type) {
   ccLogo.setAttribute("src", `cc-${type}.svg`)
 }
 
-setCardType("mastercard")
+setCardType("default")
 
 //deixando função global, sendo possível executar no console do navegador
 globalThis.setCardType = setCardType
